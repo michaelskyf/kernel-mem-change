@@ -1,0 +1,26 @@
+-I/lib/modules/5.16.12-arch1-1/build/arch/x86/include
+-I/lib/modules/5.16.12-arch1-1/build/arch/x86/include/generated
+-I/lib/modules/5.16.12-arch1-1/build/include
+-I/lib/modules/5.16.12-arch1-1/build/arch/x86/include/uapi
+-I/lib/modules/5.16.12-arch1-1/build/arch/x86/include/generated/uapi
+-I/lib/modules/5.16.12-arch1-1/build/include/uapi
+-I/lib/modules/5.16.12-arch1-1/build/include/generated/uapi
+-include /lib/modules/5.16.12-arch1-1/build/include/linux/compiler-version.h
+-include /lib/modules/5.16.12-arch1-1/build/include/linux/kconfig.h
+-include /lib/modules/5.16.12-arch1-1/build/include/linux/compiler_types.h
+-D__KERNEL__
+-Wall
+-Wundef
+-Werror=strict-prototypes
+-Wno-trigraphs
+-fno-strict-aliasing
+-fno-common
+-fshort-wchar
+-fno-PIE
+-Werror=implicit-function-declaration
+-Werror=implicit-int
+-DSTRUCTLEAK_PLUGIN
+-DMODULE
+-DCC_USING_FENTRY
+-Werror=return-type -Wno-format-security -std=gnu89 -m64 -Wno-sign-compare -fno-jump-tables -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 -fno-allow-store-data-races -Wframe-larger-than=2048 -fstack-protector-strong -Wimplicit-fallthrough=5 -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-stack-clash-protection
+-Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -Wno-zero-length-bounds -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -Wno-alloc-size-larger-than -fno-strict-overflow -fno-stack-check -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init
