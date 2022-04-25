@@ -11,11 +11,12 @@ This little, hacked-together Linux module finds pattern in user-space process an
 - Run `make` (make sure to install linux-headers)
 - Run `./loop`
 - Run `insmod mem-change.ko`
-- If everything worked correctly, "loop" should display a message and exit
+- If everything worked correctly, "loop" should display a message and exit (If not see [Hacking](<#hacking>))
 - ⚠️ Due to page caching, you need to recompile loop.c to restore it to normal behaviour
 
 ## Hacking
-If You want to find another pattern to replace, run `objdump -d ./loop`
+If You want to find another pattern to replace, run `objdump -d ./loop` <br>
+This module is really basic and doesn't support patterns spanning across pages
 
 ## Tested on
-- x86_64 Arch Linux (kernel 5.17)
+- x86_64 Arch Linux (kernel 5.17) with gcc (11.2.0)
